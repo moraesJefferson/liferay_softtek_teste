@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="br.com.liferay.test" auto-namespace-tables="false">
+	<namespace>First</namespace>
+
+    <entity name="Pessoa" local-service="true" remote-service="false" table="pessoa">
+        <column name="name" type="String"></column>
+        <column name="data_nascimento" type="Date"></column>
+        <column name="rg" type="String"></column>
+        <column name="data_expedicao_rg" type="Date"></column>
+        <column name="cpf" type="String"></column>
+        <column name="nome_pai" type="String"></column>
+        <column name="nome_mae" type="String"></column>
+        <column name="naturalidade" type="String"></column>
+        <column name="uf" type="String"></column>
+        <column name="id" type="long" primary="true"></column>
+        <column name="plano_id" type="long"></column>
+    </entity>
+    <entity name="PlanoSaude" local-service="true" remote-service="false">
+        <column name="plano_id" primary="true" type="long"></column>
+        <column name="descricao" type="String"></column>
+        
+        <finder name="descricao" return-type="Collection">
+            <finder-column name="descricao"></finder-column>
+        </finder>
+    </entity>
+    
+</service-builder>

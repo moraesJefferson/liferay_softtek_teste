@@ -1,0 +1,10 @@
+Bundle-Name: myserviceText-api
+Bundle-SymbolicName: br.com.liferay.test.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	br.com.liferay.test.exception,\
+	br.com.liferay.test.model,\
+	br.com.liferay.test.service,\
+	br.com.liferay.test.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../myserviceText-service/service.xml

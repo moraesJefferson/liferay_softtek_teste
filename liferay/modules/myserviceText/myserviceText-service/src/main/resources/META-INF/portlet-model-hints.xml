@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="br.com.liferay.test.model.Pessoa">
+		<field name="name" type="String" />
+		<field name="data_nascimento" type="Date" />
+		<field name="rg" type="String" />
+		<field name="data_expedicao_rg" type="Date" />
+		<field name="cpf" type="String" />
+		<field name="nome_pai" type="String" />
+		<field name="nome_mae" type="String" />
+		<field name="naturalidade" type="String" />
+		<field name="uf" type="String" />
+		<field name="id" type="long" />
+		<field name="plano_id" type="long" />
+	</model>
+	<model name="br.com.liferay.test.model.PlanoSaude">
+		<field name="plano_id" type="long" />
+		<field name="descricao" type="String" />
+	</model>
+</model-hints>

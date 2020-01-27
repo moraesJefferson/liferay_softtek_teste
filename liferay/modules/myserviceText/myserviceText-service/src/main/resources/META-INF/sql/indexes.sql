@@ -1,0 +1,1 @@
+create index IX_A06C6B71 on PlanoSaude (descricao[$COLUMN_LENGTH:75$]);
